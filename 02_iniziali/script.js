@@ -16,6 +16,6 @@ function initials(haystack) {
 
 // Invoca la funzione qui e stampa il risultato in console
 initials(names);
-console.table(initials(names));
+console.log(initials(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
