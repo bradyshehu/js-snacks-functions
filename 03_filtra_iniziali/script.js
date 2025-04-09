@@ -19,7 +19,7 @@ function searchByFirstLetter(list, letter) {
 // Invoca la funzione qui e stampa il risultato in console
 
 const letterToFilterBy = "A";
-searchByFirstLetter(names, letterToFilterBy);
-console.log(searchByFirstLetter(names, letterToFilterBy));
+const filteredNames = searchByFirstLetter(names, letterToFilterBy);
+console.log(filteredNames);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
