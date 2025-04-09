@@ -4,18 +4,24 @@ const word = "javascript";
 
 // Dichiara la funzione qui.
 
+function isVowel(char) {
+  if (
+    char === "a" ||
+    char === "e" ||
+    char === "i" ||
+    char === "o" ||
+    char === "u"
+  ) {
+    return true;
+  }
+}
+
 function countVowels(word) {
   const fixedWord = word.toLowerCase();
   let numberOfVowels = 0;
   for (i = 0; i < word.length; i++) {
     const currentLetter = fixedWord[i];
-    if (
-      currentLetter === "a" ||
-      currentLetter === "e" ||
-      currentLetter === "i" ||
-      currentLetter === "o" ||
-      currentLetter === "u"
-    ) {
+    if (isVowel(currentLetter)) {
       numberOfVowels += 1;
     }
   }

@@ -8,7 +8,8 @@ const greet = (name) => `Ciao ${name}`;
 
 // Invoca la funzione qui e stampa il risultato in console
 
-alert(greet(userName));
-console.log(greet(userName));
+const userGreetMessage = greet(userName);
+alert(userGreetMessage);
+console.log(userGreetMessage);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
